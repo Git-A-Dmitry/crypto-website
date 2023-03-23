@@ -37,18 +37,23 @@ html {
 
 body {
   font-family: var(--font-family);
-  background-color: #fff;
+}
+
+.main-container {
+  position: relative;
+  min-height: 100vh;
 }
 
 section {
   width: 100%;
-  padding: 6rem 0;
+  padding: 2rem 0;
 }
 
 .container {
-  max-width: 1000px;
+  /* position: relative; */
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px 60px 10px;
 }
 
 /* UTILITY CLASSES */
@@ -152,7 +157,7 @@ p {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.3;
-  color: var(--color-dark);
+  /* color: var(--color-dark); */
 }
 .--text-xl {
   font-size: 4.5rem;
@@ -510,8 +515,9 @@ a:hover {
 
 /* CUSTOM STYLES */
 header {
-  background-color: #34495e;
-  /* background-color: var(--dark-blue); */
+  /* position: fixed;
+  width: 100%; */
+  background-color: #172035;
 }
 
 .header {
@@ -533,27 +539,21 @@ nav ul {
 }
 
 ul li a {
-  margin: 0 10px;
+  margin: 0 2rem;
   font-size: 1.6rem;
   color: #fff;
+  text-transform: uppercase;
 }
 ul li a:hover {
   color: orangered;
 }
 
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.hero-text {
+/* .hero-text {
   flex: 1;
 }
 
 .hero-text > * {
   margin-bottom: 3rem;
-  /* max-width: 80%; */
 }
 
 .hero-text a {
@@ -565,11 +565,7 @@ ul li a:hover {
   flex: 1;
   align-self: center;
   text-align: center;
-}
-
-.coin-list {
-  background-color: #eee;
-}
+} */
 
 .red {
   color: red;
@@ -620,7 +616,3 @@ ul.coin-details li {
   color: #fff;
   background-color: var(--light-blue);
 }
-
-/* .my-hero {
-  background: url(../public/crypto-2.png);
-} */

@@ -4,11 +4,11 @@ import styles from '@/styles/Hero.module.scss';
 const Hero = () => {
   return (
     <section className={styles.hero}>
-      <div className='container hero --flex-dir-column my-hero'>
-        <div className='hero-text'>
+      <div className='container'>
+        <div className={styles.text}>
           <h1>Discover the World of Cryptocurrency</h1>
           <p>Are you curious about the exciting and rapidly-evolving world of cryptocurrency? Look no further! Our website is the perfect resource for anyone interested in learning more about this innovative form of digital currency.</p>
-          <a href='about' className='--btn --btn-hero'>
+          <a href='crypto' className='--btn --btn-hero'>
             Get Started
           </a>
         </div>

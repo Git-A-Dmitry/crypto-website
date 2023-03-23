@@ -1,15 +1,14 @@
 .footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
+  padding-top: 18px;
+  text-align: center;
+  color: #333;
   width: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
+  height: 6rem;
   background-color: #34495e;
-}
 
-.footer p {
-  color: #fff;
+  p {
+    color: aliceblue;
+  }
 }

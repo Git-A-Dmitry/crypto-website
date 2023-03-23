@@ -1,3 +1,9 @@
+.cryptolist {
+  background-color: #fff;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
 .table {
   padding: 5px;
   width: 100%;
@@ -6,18 +12,18 @@
   table {
     border-collapse: collapse;
     width: 100%;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 
     thead {
-      border-top: 2px solid var(--light-blue);
-      border-bottom: 2px solid var(--light-blue);
-      background-color: var(--light-blue);
+      // border-top: 2px solid var(--light-blue);
+      // border-bottom: 2px solid var(--light-blue);
+      background-color: #172035;
       color: #fff;
     }
 
-    th {
-      border: 1px solid #eee;
-    }
+    // th {
+    //   border: 5px solid #c94c4c;
+    // }
 
     th,
     td {
@@ -33,7 +39,7 @@
     }
 
     tr {
-      border-bottom: 1px solid #ccc;
+      border-bottom: 5px solid #ccc;
       cursor: pointer;
     }
 

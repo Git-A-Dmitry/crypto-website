@@ -8,7 +8,7 @@ const Header = () => {
         {/* <div className='container header'> */}
         <div className='header'>
           <div className='logo'>
-            <h3>crypto</h3>
+            {/* <h3>crypto</h3> */}
             {/* <h2>
               Crypto <span className='--color-danger'>X</span>
             </h2> */}
@@ -18,6 +18,9 @@ const Header = () => {
             <ul>
               <li>
                 <Link href={'/'}>Home</Link>
+              </li>
+              <li>
+                <Link href={'/crypto'}>Crypto</Link>
               </li>
               <li>
                 <Link href={'/about'}>About</Link>
