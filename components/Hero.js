@@ -13,18 +13,19 @@ const Hero = () => {
             transition={{ delay: 0.4, type: 'spring', bounce: 0.7 }}
             // transition={{ delay: 0.5, type: 'tween', duration: 0.5 }}
           >
-            Discover the World of
+            {/* Discover the World of */}
+            Crypto World
           </motion.h1>
 
-          <motion.h1 //
+          {/* <motion.h1 //
             animate={{ y: 0, opacity: 1 }}
             initial={{ y: -30, opacity: 0 }}
             transition={{ delay: 1, type: 'spring', bounce: 0.7 }}
           >
             Cryptocurrency
-          </motion.h1>
+          </motion.h1> */}
 
-          <p>Are you curious about the exciting and rapidly-evolving world of cryptocurrency? Look no further! Our website is the perfect resource for anyone interested in learning more about this innovative form of digital currency.</p>
+          <p>Are you curious about the exciting and rapidly-evolving world of cryptocurrency? Our website is the perfect resource for anyone interested in learning more about this innovative form of digital currency.</p>
           <a href='crypto' className='btn btn-hero'>
             Get Started
           </a>

@@ -1,28 +1,29 @@
 .hero {
-  position: relative;
-  background-color: var(--overlay);
+  // position: relative;
+  // background-color: var(--overlay);
 
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  // background: url(../public/3d-digital.jpg);
-  // background-position: center left;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  /* background-size: contain; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../public/pexels-traiding.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-size: contain;
+  background-attachment: fixed;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url(../public/pexels-traiding.jpg) no-repeat center center/cover;
-    background-attachment: fixed;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-  }
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   background: url(../public/pexels-traiding.jpg) no-repeat center center/cover;
+  //   background-attachment: fixed;
+  //   height: 100%;
+  //   width: 100%;
+  //   z-index: -1;
+  // }
 
   h1 {
     color: #fff;
@@ -38,6 +39,7 @@
   p {
     color: #ecf0f1;
     margin-top: 1rem;
+    font-size: 1.5rem;
 
     @media (width >= 800px) {
       width: 50%;
