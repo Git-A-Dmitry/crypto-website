@@ -1,11 +1,30 @@
-.crypto {
-  min-height: 100vh;
-  background: url(../public/3d-digital.jpg);
-  background-position: center left;
-  background-repeat: no-repeat;
-  background-size: cover;
+// .crypto {
+//   position: relative;
+//   background-color: var(--overlay);
+//   min-height: 50vh;
+// overflow: hidden;
+// background-color: #ecf0f1;
+// background-color: #f8f8f8;
 
-  h2 {
-    color: #fff;
-  }
-}
+// &::before {
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   background: url(../public/crypto-cell.jpg) no-repeat center center/cover;
+//   height: 100%;
+//   width: 100%;
+//   z-index: -1;
+// }
+// background: url(../public/crypto-cell.jpg);
+// background-position: center;
+// background-repeat: no-repeat;
+// background-size: center/cover;
+
+// no-repeat center center/cover;
+
+//   h3 {
+//     color: #000;
+//     font-size: 1.5rem;
+//   }
+// }

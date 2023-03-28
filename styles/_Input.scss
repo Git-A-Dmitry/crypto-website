@@ -1,0 +1,43 @@
+.--form-control {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.--form-control > * {
+  margin: 5px 0;
+}
+
+.--form-control input {
+  width: 100%;
+  margin-bottom: 30px;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #172035;
+  padding: 10px 1rem;
+  outline: none;
+  opacity: 0.9;
+  border: solid 3px transparent;
+  border-bottom: 2px solid var(--color-primary);
+  // border-bottom: dashed 3px var(--color-primary);
+
+  @media screen and (width >= 800px) {
+    width: 580px;
+  }
+}
+
+.--form-control select {
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 8px 1rem;
+  border: 1px solid #777;
+  border-radius: 3px;
+}
+
+.--form-control label {
+  font-size: 1.6rem;
+  font-weight: 400;
+  display: inline-block;
+  min-width: 10rem;
+  color: var(--color-dark);
+  margin-right: 1rem;
+}

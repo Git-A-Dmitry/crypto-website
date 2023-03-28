@@ -8,17 +8,18 @@ const Hero = () => {
       <div className='container'>
         <div className={styles.text}>
           <motion.h1 //
-            animate={{ scale: 1, opacity: 1 }}
-            initial={{ scale: 0.9, opacity: 0.5 }}
-            transition={{ type: 'tween', duration: 5 }}
+            animate={{ y: 0, opacity: 1 }}
+            initial={{ y: -30, opacity: 0 }}
+            transition={{ delay: 0.4, type: 'spring', bounce: 0.7 }}
+            // transition={{ delay: 0.5, type: 'tween', duration: 0.5 }}
           >
             Discover the World of
           </motion.h1>
 
           <motion.h1 //
-            animate={{ scale: 1, opacity: 1 }}
-            initial={{ scale: 0.9, opacity: 0 }}
-            transition={{ type: 'tween', duration: 5 }}
+            animate={{ y: 0, opacity: 1 }}
+            initial={{ y: -30, opacity: 0 }}
+            transition={{ delay: 1, type: 'spring', bounce: 0.7 }}
           >
             Cryptocurrency
           </motion.h1>

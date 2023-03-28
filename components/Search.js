@@ -5,7 +5,7 @@ const Search = ({ value, onChange }) => {
     <div className='--form-control'>
       <input //
         type='text'
-        placeholder='search coin...'
+        placeholder='search'
         value={value}
         onChange={onChange}
       />

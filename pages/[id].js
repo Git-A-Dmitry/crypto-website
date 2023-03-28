@@ -75,7 +75,7 @@ const Coin = ({ coins }) => {
 };
 
 export const getStaticPaths = async () => {
-  const res = await fetch('https://api.coinstats.app/public/v1/coins?skip=0&limit=10');
+  const res = await fetch('https://api.coinstats.app/public/v1/coins?skip=0&limit=20');
   const data = await res.json();
 
   const paths = data.coins.map((coin) => {

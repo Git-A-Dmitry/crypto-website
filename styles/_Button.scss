@@ -1,0 +1,40 @@
+.btn {
+  font-weight: 400;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.btn-hero {
+  font-size: 1.8rem;
+  padding: 10px 35px;
+  background-color: var(--color-primary);
+  border: 1px solid #fff;
+  border-radius: 40px;
+  background-position: center;
+  transition: background 0.5s;
+}
+
+.btn-hero:hover {
+  // background-color: #30336b;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+  // background-image: radial-gradient(circle, transparent 1%, #6c5ce7 1%);
+  // background-position: center;
+  // background-size: 15000%;
+
+  &:hover {
+    border: 1px solid greenyellow;
+  }
+}
+
+// .btn-hero:active {
+//   transition: background 0s;
+//   background-color: #2d3436;
+//   background-size: 100%;
+// }

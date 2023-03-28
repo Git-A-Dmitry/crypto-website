@@ -1,7 +1,22 @@
-.cryptolist {
-  background-color: #fff;
-  border-radius: 5px;
-  opacity: 0.9;
+.heading {
+  h1 {
+    color: var(--color-primary);
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (width <= 800px) {
+      display: none;
+    }
+  }
+}
+
+.paragraph {
+  padding: 0 0;
+
+  p {
+    font-size: 1.8rem;
+  }
 }
 
 .table {
@@ -10,26 +25,25 @@
   overflow-x: auto;
 
   table {
+    // border: 1px solid #ccc;
     border-collapse: collapse;
     width: 100%;
     font-size: 1.5rem;
 
     thead {
-      // border-top: 2px solid var(--light-blue);
-      // border-bottom: 2px solid var(--light-blue);
       background-color: #172035;
       color: #fff;
     }
 
-    // th {
-    //   border: 5px solid #c94c4c;
-    // }
+    th {
+      border: 2px solid #fff;
+    }
 
     th,
     td {
       vertical-align: top;
       text-align: left;
-      padding: 8px;
+      padding: 12px 8px;
       &.icons {
         > * {
           margin-right: 5px;
@@ -39,7 +53,7 @@
     }
 
     tr {
-      border-bottom: 5px solid #ccc;
+      border-bottom: 2px solid #ccc;
       cursor: pointer;
     }
 
@@ -48,14 +62,6 @@
     }
     tr:hover {
       background-color: #ccc;
-    }
-    .pending {
-      color: orangered;
-      font-weight: 500;
-    }
-    .delivered {
-      color: green;
-      font-weight: 500;
     }
   }
 }
