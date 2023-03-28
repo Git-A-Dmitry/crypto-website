@@ -1,11 +1,15 @@
 import Image from 'next/image';
 import styles from '@/styles/Hero.module.scss';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import traiding from '../public/3d-digital.jpg';
 
 const Hero = () => {
+  let { scrollYProgress } = useScroll();
+  let y = useTransform(scrollYProgress, [0, 1], ['0%', '70%']);
+
   return (
     <section className={styles.hero}>
-      <div className='container'>
+      <motion.div className='container' style={{ y }}>
         <div className={styles.text}>
           <motion.h1 //
             animate={{ y: 0, opacity: 1 }}
@@ -33,7 +37,7 @@ const Hero = () => {
         {/* <div className='hero-img'>
           <Image src='/crypto.png' alt='phone' width={225} height={450} />
         </div> */}
-      </div>
+      </motion.div>
     </section>
   );
 };
