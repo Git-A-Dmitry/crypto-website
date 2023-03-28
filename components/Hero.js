@@ -8,8 +8,8 @@ const Hero = () => {
   let y = useTransform(scrollYProgress, [0, 1], ['0%', '70%']);
 
   return (
-    <section className={styles.hero}>
-      <motion.div className='container' style={{ y }}>
+    <motion.section className={styles.hero} style={{ y }}>
+      <div className='container'>
         <div className={styles.text}>
           <motion.h1 //
             animate={{ y: 0, opacity: 1 }}
@@ -37,8 +37,8 @@ const Hero = () => {
         {/* <div className='hero-img'>
           <Image src='/crypto.png' alt='phone' width={225} height={450} />
         </div> */}
-      </motion.div>
-    </section>
+      </div>
+    </motion.section>
   );
 };
 
