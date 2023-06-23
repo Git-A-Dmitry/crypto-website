@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router';
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import styles from '../styles/Table.module.scss';
 import Search from './Search';
 import ReactPaginate from 'react-paginate';
+import styles from '../styles/Table.module.scss';
 
 export const formatNumbers = (x) => {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
@@ -65,7 +65,10 @@ const CryptoList = ({ coins, initialDate }) => {
         <div className={styles.table}>
           <div className={styles.paragraph}>
             <p>Get the Latest Prices for Bitcoin, Ethereum, and More on {initialDate} </p>
-            <Search value={search} onChange={handleSearch} />
+            <Search
+              value={search}
+              onChange={handleSearch}
+            />
           </div>
 
           <table>
@@ -82,10 +85,18 @@ const CryptoList = ({ coins, initialDate }) => {
               {currentItems.map((coin, index) => {
                 const { id, icon, name, symbol, price, priceChange1d, marketCap } = coin;
                 return (
-                  <tr key={id} onClick={() => handleRowClick(id)}>
+                  <tr
+                    key={id}
+                    onClick={() => handleRowClick(id)}
+                  >
                     <td>{index + 1}</td>
                     <td>
-                      <Image src={icon} alt={name} width='20' height='20' />
+                      <Image
+                        src={icon}
+                        alt={name}
+                        width='20'
+                        height='20'
+                      />
                       &nbsp;
                       {symbol}
                     </td>

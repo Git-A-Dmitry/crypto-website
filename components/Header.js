@@ -7,7 +7,8 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 const navigation = [
   { id: 1, title: 'Home', path: '/' },
   { id: 2, title: 'Crypto', path: '/crypto' },
-  { id: 3, title: 'About', path: '/about' },
+  { id: 3, title: 'Contacts', path: '/contact' },
+  { id: 4, title: 'About', path: '/about' },
 ];
 
 const Header = () => {
@@ -27,11 +28,20 @@ const Header = () => {
             </h2> */}
           {/* </div> */}
 
-          <div className='navbar__hamburger' onClick={handleClick}>
+          <div
+            className='navbar__hamburger'
+            onClick={handleClick}
+          >
             {menu ? (
-              <FaTimes size={24} style={{ color: 'ffffff' }} /> //
+              <FaTimes
+                size={24}
+                style={{ color: 'ffffff' }}
+              /> //
             ) : (
-              <FaBars size={24} style={{ color: 'ffffff' }} />
+              <FaBars
+                size={24}
+                style={{ color: 'ffffff' }}
+              />
             )}
           </div>
 

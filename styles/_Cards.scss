@@ -14,13 +14,7 @@
 
   &__wrapper {
     max-width: 1140px;
-    margin: auto;
-
-    // & > p {
-    //   margin: 1rem 0 3rem 0;
-    //   font-size: 1.2rem;
-    //   color: #f8f8f8;
-    // }
+    margin: 23rem auto 0 auto;
   }
 
   &__cards {
@@ -43,9 +37,8 @@
       padding: 3rem 2rem;
       border: 1px solid #000;
       background-color: rgb(0, 0, 0, 0.9);
-      // background-color: var(--color-primary);
       border-radius: 10px;
-      opacity: 0.95;
+      opacity: 0.9;
       box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
 
       @media (width >= 860px) {
@@ -89,9 +82,4 @@
       color: #333;
     }
   }
-
-  // .btn {
-  //   display: inline-block;
-  //   margin-top: 1rem;
-  // }
 }

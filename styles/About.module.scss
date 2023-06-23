@@ -1,20 +1,19 @@
 .about {
-  position: relative;
-  background-color: rgb(0, 0, 0, 0.8);
+  // position: relative;
   min-height: 100vh;
-  // background-color: #e0e6e2;
+  background-color: #e0e6e2;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url(../public/pexels-cell-coins2.jpg) no-repeat center center/cover;
-    background-attachment: fixed;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-  }
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   background: url(../public/pexels-cell-coins2.jpg) no-repeat center center/cover;
+  //   background-attachment: fixed;
+  //   height: 100%;
+  //   width: 100%;
+  //   z-index: -1;
+  // }
 
   // @media (width >= 800px) {
   //   background: url(../public/pexels-cell-coins2.jpg);
@@ -26,8 +25,8 @@
 
   h2 {
     font-size: 2rem;
-    // color: #1c1d22;
-    color: #ecf0f1;
+    color: #333;
+    // color: #ecf0f1;
 
     @media (width >= 800px) {
       font-size: 3rem;
@@ -35,9 +34,9 @@
   }
 
   p {
-    // color: #1c1d22;
-    color: #ecf0f1;
-    padding-top: 2rem;
+    color: #1c1d22;
+    // color: #ecf0f1;
+    padding-top: 1.5rem;
     font-size: 1.5rem;
 
     @media (width >= 800px) {

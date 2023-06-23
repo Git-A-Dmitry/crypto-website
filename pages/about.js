@@ -1,14 +1,43 @@
 import Layout from '@/components/Layout';
 import Image from 'next/image';
-import styles from '../styles/About.module.scss';
 import { motion } from 'framer-motion';
+import styles from '../styles/About.module.scss';
 
 const about = () => {
   return (
     <Layout>
       <section className={styles.about}>
+        {/* <div className={styles.contacts}>
+          <form action='https://getform.io/f/d78cb41f-c4ad-4655-982c-7946fac55285' method='POST' encType='multipart/form-data'>
+            <div className={styles['form-name']}>
+              <div className={styles.name}>
+                <label htmlFor=''>Name</label>
+                <input type='text' name='name' />
+              </div>
+              <div className={styles.name}>
+                <label htmlFor=''>Phone Number</label>
+                <input type='text' name='phone' />
+              </div>
+            </div>
+
+            <div className={styles.name}>
+              <label htmlFor=''>Email</label>
+              <input type='email' name='email' />
+            </div>
+            <div className={styles.name}>
+              <label htmlFor=''>Subject</label>
+              <input type='text' name='subject' />
+            </div>
+
+            <div className={styles.name}>
+              <label htmlFor=''>Message</label>
+              <textarea name='message' id='' cols='30' rows='10'></textarea>
+            </div>
+            <button className='btn'>Send Message</button>
+          </form>
+        </div> */}
+
         <div className={styles.wrapper}>
-          {/* <div className={`${styles.wrapper} container`}> */}
           <div className={styles.text}>
             <motion.h2 //
               animate={{ y: 0, opacity: 1 }}
